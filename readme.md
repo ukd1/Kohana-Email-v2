@@ -37,7 +37,7 @@ $email = Email::compose('my_config_group')
 
 try {
     $email->send();
-} catch(Email_Exception) {
+} catch(Email_Exception $e) {
     echo $e->getMessage();
 }
 ```
